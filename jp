@@ -1,0 +1,31 @@
+function openModal(service) {
+    // Set the image based on the service clicked
+    let imageSrc = "";
+    switch (service) {
+        case "pemetaan":
+            imageSrc = "images/pemetaan.jpg";  // Replace with your actual image path
+            break;
+        case "website":
+            imageSrc = "images/website.jpg";  // Replace with your actual image path
+            break;
+        case "drone":
+            imageSrc = "images/drone.jpg";  // Replace with your actual image path
+            break;
+        case "desain":
+            imageSrc = "images/desain.jpg";  // Replace with your actual image path
+            break;
+        case "shop":
+            imageSrc = "images/shop.jpg";  // Replace with your actual image path
+            break;
+    }
+
+    // Display the modal and set the image
+    document.getElementById("modal").style.display = "block";
+    document.getElementById("modalImage").src = imageSrc;
+}
+
+function closeModal() {
+    // Close the modal
+    document.getElementById("modal").style.display = "none";
+}
+
